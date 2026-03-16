@@ -1,7 +1,7 @@
 apiVersion: policy.karmada.io/v1alpha1
 kind: PropagationPolicy
 metadata:
-  name: nginx-propagation-test
+  name: propagation-test
   namespace: karmada-test
 spec:
   resourceSelectors:
@@ -21,7 +21,7 @@ spec:
           - targetCluster:
               clusterNames:
                 - cdo-test
-            weight: 2
+            weight: 1
           - targetCluster:
               clusterNames:
                 - am1-test
