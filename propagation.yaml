@@ -12,7 +12,7 @@ spec:
     clusterAffinity:
       clusterNames:
         - cdo-test
-        - am1-test
+        - karmada-test
     replicaScheduling:
       replicaDivisionPreference: Weighted
       replicaSchedulingType: Divided
@@ -24,5 +24,5 @@ spec:
             weight: 1
           - targetCluster:
               clusterNames:
-                - am1-test
+                - karmada-test
             weight: 1
