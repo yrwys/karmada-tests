@@ -11,8 +11,8 @@ spec:
   placement:
     clusterAffinity:
       clusterNames:
-        - cdo-test
-        - karmada-test
+        - aks-cdo-test
+        - aks-am1-test
     replicaScheduling:
       replicaDivisionPreference: Weighted
       replicaSchedulingType: Divided
@@ -20,9 +20,9 @@ spec:
         staticWeightList:
           - targetCluster:
               clusterNames:
-                - cdo-test
-            weight: 1
+                - aks-cdo-test
+            weight: 2
           - targetCluster:
               clusterNames:
-                - karmada-test
+                - aks-am1-test
             weight: 1
